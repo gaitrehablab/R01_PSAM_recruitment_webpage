@@ -1,0 +1,6 @@
+.claude/
+*.docx
+*.pptx
+*.pdf
+extract.py
+*.mp4

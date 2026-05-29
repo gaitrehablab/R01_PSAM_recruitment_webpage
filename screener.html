@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eligibility Screener | Post-Stroke Apathy & Mobility Study | USC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .screener-wrap {
+      margin-top: 60px;
+      min-height: calc(100vh - 60px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px 24px;
+      background: var(--gray-light);
+    }
+    .screener-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 580px; width: 100%;
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .screener-card h1 {
+      font-size: 1.6rem; color: var(--black); margin-bottom: 8px;
+    }
+    .screener-card .step-info {
+      font-size: 0.85rem; color: var(--gray); margin-bottom: 32px;
+    }
+    .progress-bar {
+      height: 4px; background: #e0e0e0; border-radius: 2px;
+      margin-bottom: 32px; overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%; background: var(--red); border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+    .question {
+      font-size: 1.15rem; color: var(--black); margin-bottom: 28px;
+      line-height: 1.5; font-weight: 500;
+    }
+    .btn-group {
+      display: flex; gap: 16px; justify-content: center;
+    }
+    .btn-group .btn { min-width: 120px; }
+    .btn-yes { background: var(--red); color: var(--white); }
+    .btn-yes:hover { background: var(--red-dark); color: var(--white); transform: translateY(-1px); }
+    .btn-no {
+      background: var(--white); color: var(--gray-dark);
+      border: 2px solid #ddd;
+    }
+    .btn-no:hover { border-color: var(--gray-dark); transform: translateY(-1px); }
+
+    /* Result states */
+    .result { display: none; }
+    .result.active { display: block; }
+    .result-pass h2 { color: #2e7d32; margin-bottom: 12px; }
+    .result-fail h2 { color: var(--red); margin-bottom: 12px; }
+    .result p { color: var(--gray); margin-bottom: 20px; line-height: 1.6; }
+    .result .btn { margin-top: 8px; }
+
+    .back-link {
+      display: inline-block; margin-top: 24px;
+      font-size: 0.9rem; color: var(--gray);
+    }
+    .back-link:hover { color: var(--red); }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">USC <span>| Stroke & Mobility Study</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">&#8592; Back to Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="screener-wrap">
+  <div class="screener-card">
+    <h1>Eligibility Screener</h1>
+    <p class="step-info" id="step-info">Question 1 of 6</p>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progress" style="width: 16.6%"></div>
+    </div>
+
+    <!-- Questions -->
+    <div id="question-area">
+      <p class="question" id="question-text"></p>
+      <div class="btn-group">
+        <button class="btn btn-yes" id="btn-yes">Yes</button>
+        <button class="btn btn-no" id="btn-no">No</button>
+      </div>
+    </div>
+
+    <!-- Pass result -->
+    <div class="result result-pass" id="result-pass">
+      <h2>&#10003; You May Be Eligible!</h2>
+      <p>Based on your answers, you may qualify for our study. Please fill out our contact form and our team will reach out to confirm your eligibility.</p>
+      <!-- TODO: Replace href with actual contact form URL -->
+      <a href="#CONTACT_FORM_URL" class="btn btn-primary" id="contact-link">Go to Contact Form</a>
+      <p style="font-size:0.85rem; margin-top:16px; color:#999;">Your responses are not stored. This screener is for informational purposes only.</p>
+    </div>
+
+    <!-- Fail result -->
+    <div class="result result-fail" id="result-fail">
+      <h2>You May Not Be Eligible</h2>
+      <p>Based on your answers, you may not meet the criteria for this study. However, if you think there's been a misunderstanding or have questions, please don't hesitate to contact us.</p>
+      <a href="index.html#contact" class="btn btn-outline">Contact the Study Team</a>
+    </div>
+
+    <a href="index.html" class="back-link">&#8592; Back to study information</a>
+  </div>
+</div>
+
+<script src="js/screener.js"></script>
+</body>
+</html>
