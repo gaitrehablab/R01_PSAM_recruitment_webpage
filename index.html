@@ -13,29 +13,33 @@
 <nav class="nav">
   <div class="container">
     <a href="#" class="nav-logo">
+      <img src="images/usc-logo.png" alt="University of Southern California" class="nav-logo-usc">
+      <span class="nav-logo-divider"></span>
       <img src="images/grml-logo.svg" alt="GRML Lab" class="nav-logo-img">
     </a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="#why-join">Why Join</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#why-join">Why Join</a></li>
       <li><a href="#eligibility">Eligibility</a></li>
       <li><a href="#what-to-expect">What to Expect</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary nav-cta">Interest Form</a></li>
+      <li><a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary nav-cta">I’m Interested</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- Hero -->
 <section class="hero">
-  <div class="container">
-    <h1>Understanding Motivation and Walking After Stroke</h1>
-    <p>We're studying how motivation changes after stroke and what it means for your mobility. Your experience can help shape better rehabilitation.</p>
-    <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary">Interest Form</a>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Understanding Motivation and Walking After Stroke</h1>
+      <p>We're studying how motivation changes after stroke and what it means for your mobility. Your experience can help shape better rehabilitation.</p>
+      <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary">I’m Interested</a>
+    </div>
 
     <!-- Image Carousel -->
     <div class="carousel">
@@ -61,45 +65,14 @@
   </div>
 </section>
 
-<!-- Why Join -->
-<section id="why-join">
-  <div class="container">
-    <h2 class="section-title">Why Participate?</h2>
-    <p class="section-subtitle">Help advance stroke rehabilitation research and receive these benefits:</p>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
-        <h3>Free Clinical Assessments</h3>
-        <p>Comprehensive evaluations of your balance, walking, and cognition — at no cost to you.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-        </div>
-        <h3>$20/Hour Compensation</h3>
-        <p>Gift card compensation for every hour you spend in study visits.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        </div>
-        <h3>Free MRI & Parking</h3>
-        <p>Receive a brain MRI scan. Parking is free.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- About the Study -->
-<section id="about" style="background:var(--gray-light);">
+<section id="about">
   <div class="container">
     <h2 class="section-title">About the Study</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>After a stroke, many people experience <strong>apathy</strong> — a loss of motivation that goes beyond feeling tired or sad. This can affect how much you walk and engage in daily life, even when your body is physically capable.</p>
-        <p>Our team at the <strong>Gait Rehabilitation and Motor Learning (GRML) Lab</strong> at the University of Southern California (USC) is studying this connection. This is an observational study (not a treatment), involving three visits where we assess your walking, decision-making, and brain activity. The findings will help develop new rehabilitation approaches that address motivation — not just physical ability.</p>
+        <p>After a stroke, many people experience <strong>apathy</strong>, a loss of motivation that goes beyond feeling tired or sad. This can affect how much you walk and engage in daily life, even when your body is physically capable.</p>
+        <p>Our team at the <strong>Gait Rehabilitation and Motor Learning (GRML) Lab</strong> at the University of Southern California (USC) is studying this connection. This is an observational study (not a treatment), involving three visits where we assess your walking, decision-making, and brain activity. The findings will help develop new rehabilitation approaches that address motivation, not just physical ability.</p>
       </div>
       <div class="about-video">
         <iframe width="100%" style="aspect-ratio:16/9;" src="https://www.youtube.com/embed/pasdt6CAFew" frameborder="0" allowfullscreen></iframe>
@@ -109,24 +82,56 @@
   </div>
 </section>
 
+<!-- Why Join -->
+<section id="why-join" style="background:var(--gray-light);">
+  <div class="container">
+    <h2 class="section-title">Why Participate?</h2>
+    <div class="cards cards-2">
+      <div class="card">
+        <div class="card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Advance Stroke Research</h3>
+        <p>Your participation helps us understand how motivation affects walking recovery, so we can build better rehabilitation for future stroke survivors.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#990000" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <h3>Compensation</h3>
+        <p>Receive $20/hour gift card compensation for every hour you spend in study visits.</p>
+      </div>
+    </div>
+    <div class="eligibility-cta" style="margin-top:32px;">
+      <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary">I’m Interested</a>
+    </div>
+  </div>
+</section>
+
 <!-- Eligibility -->
 <section id="eligibility">
   <div class="container">
     <h2 class="section-title">Who Can Participate?</h2>
-    <p class="section-subtitle">You may be eligible if:</p>
-    <ul class="eligibility-list">
-      <li><span class="check-icon">&#10003;</span> You had a stroke at least <strong>6 months ago</strong></li>
-      <li><span class="check-icon">&#10003;</span> You are between <strong>18 and 85</strong> years old</li>
-      <li><span class="check-icon">&#10003;</span> You can <strong>walk on your own</strong> for at least 2 minutes</li>
-      <li><span class="check-icon">&#10003;</span> You can follow simple verbal instructions</li>
-    </ul>
-    <p class="eligibility-exclude-label">You may <strong>not</strong> be eligible if:</p>
-    <ul class="eligibility-list eligibility-exclude">
-      <li><span class="x-icon">&#10007;</span> You have another neurological condition (Parkinson's, MS, TBI, etc.)</li>
-    </ul>
+    <div class="eligibility-cols">
+      <div>
+        <p class="eligibility-col-label">You may be eligible if:</p>
+        <ul class="eligibility-list">
+          <li><span class="check-icon">&#10003;</span> You had a stroke at least <strong>6 months ago</strong></li>
+          <li><span class="check-icon">&#10003;</span> You are older than <strong>18</strong> years old</li>
+          <li><span class="check-icon">&#10003;</span> You can <strong>walk on your own</strong> for at least 2 minutes</li>
+          <li><span class="check-icon">&#10003;</span> You can follow simple verbal instructions</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eligibility-col-label">You may <strong>not</strong> be eligible if:</p>
+        <ul class="eligibility-list eligibility-exclude">
+          <li><span class="x-icon">&#10007;</span> You have another neurological condition (Parkinson's, MS, TBI, etc.)</li>
+        </ul>
+      </div>
+    </div>
     <div class="eligibility-cta">
-      <p>Not sure? It only takes a minute to find out.</p>
-      <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-outline">Interest Form</a>
+      <p><strong>Interested? Click “I’m Interested,” and we’ll help you figure out if this study is a good fit for you.</strong></p>
+      <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-outline">I’m Interested</a>
     </div>
   </div>
 </section>
@@ -184,6 +189,9 @@
           <p>A safe, non-invasive MRI to map brain connectivity.</p>
         </div>
       </div>
+    </div>
+    <div class="eligibility-cta" style="margin-top:32px;">
+      <a href="https://redcapsurveys.med.usc.edu/surveys/?s=9WYAPCPRTMNW8AHW" target="_blank" class="btn btn-primary">I’m Interested</a>
     </div>
   </div>
 </section>
